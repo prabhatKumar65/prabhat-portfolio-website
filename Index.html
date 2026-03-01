@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat Kumar — AI/ML Engineer & GenAI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="pre-inner">
+        <div class="pre-emblem">
+            <img src="emblem_india.png" alt="Satyameva Jayate" class="real-emblem">
+        </div>
+        <div class="pre-name">PRABHAT KUMAR</div>
+        <div class="pre-bar"><div class="pre-fill"></div></div>
+        <div class="pre-status">Initializing Portfolio...</div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-logo">
+        <span class="logo-pk">PK</span>
+        <span class="logo-sep">|</span>
+        <span class="logo-title">AI Engineer</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#hero" class="nlink active">Home</a></li>
+        <li><a href="#about" class="nlink">About</a></li>
+        <li><a href="#experience" class="nlink">Experience</a></li>
+        <li><a href="#skills" class="nlink">Skills</a></li>
+        <li><a href="#projects" class="nlink">Projects</a></li>
+        <li><a href="#contact" class="nlink">Contact</a></li>
+    </ul>
+    <a href="Prabhat_Kumar_Resume_AI.pdf" download class="nav-cta"><i class="fas fa-file-alt"></i> Resume</a>
+    <button class="ham-btn" id="hamBtn"><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer" id="drawer">
+    <div class="drawer-inner">
+        <a href="#hero" class="dlink">Home</a>
+        <a href="#about" class="dlink">About</a>
+        <a href="#experience" class="dlink">Experience</a>
+        <a href="#skills" class="dlink">Skills</a>
+        <a href="#projects" class="dlink">Projects</a>
+        <a href="#contact" class="dlink">Contact</a>
+        <a href="Prabhat_Kumar_Resume_AI.pdf" download class="dlink dlink-cta">Download Resume</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+    <canvas id="matrixCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-wrap">
+        <div class="hero-main">
+            <div class="hero-location reveal-up">
+                <i class="fas fa-map-marker-alt"></i> New Delhi, India &nbsp;&middot;&nbsp;
+                <span class="f-saffron">&#9632;</span><span class="f-white">&#9632;</span><span class="f-green">&#9632;</span>
+            </div>
+            <h1 class="hero-heading reveal-up">
+                <span class="h-line">Prabhat</span>
+                <span class="h-line h-gold">Kumar</span>
+            </h1>
+            <div class="hero-role reveal-up">
+                <span class="role-prefix">&mdash;</span>
+                <span id="typed-el"></span>
+            </div>
+            <p class="hero-sub reveal-up">
+                B.Tech IT Graduate &middot; MeitY AI/ML Intern &middot; RAG &amp; LLM Specialist<br>
+                Building production-grade AI systems for the Government of India.
+            </p>
+            <div class="hero-actions reveal-up">
+                <a href="#projects" class="btn-gold"><span>View My Work</span> <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-ghost"><span>Hire Me</span></a>
+            </div>
+            <div class="hero-badges reveal-up">
+                <div class="h-badge"><i class="fas fa-landmark"></i> Government of India</div>
+                <div class="h-badge"><i class="fas fa-robot"></i> GenAI Developer</div>
+                <div class="h-badge"><i class="fas fa-briefcase"></i> Open to Opportunities</div>
+            </div>
+        </div>
+
+        <div class="hero-side reveal-right">
+            <div class="hero-emblem-card">
+                <div class="emblem-glow"></div>
+                <img src="emblem_india.png" alt="Satyameva Jayate" class="hero-emblem-real">
+            </div>
+            <div class="hero-stats-grid">
+                <div class="hstat"><div class="hstat-num" data-count="3">0</div><div class="hstat-label">Projects</div></div>
+                <div class="hstat"><div class="hstat-num" data-count="10">0</div><div class="hstat-label">Technologies</div></div>
+                <div class="hstat"><div class="hstat-num" data-count="2026">0</div><div class="hstat-label">Active Since</div></div>
+                <div class="hstat"><div class="hstat-num" data-count="778">0</div><div class="hstat-label">CGPA x100</div></div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll to explore</span>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="sec-label reveal-up">About</div>
+        <div class="about-layout">
+            <div class="about-photo-col reveal-up">
+                <div class="photo-frame">
+                    <img src="Data Scientist.png" alt="Prabhat Kumar" class="photo-img">
+                    <div class="photo-accent"></div>
+                    <div class="photo-badge-tl">AI/ML</div>
+                    <div class="photo-badge-br">MeitY</div>
+                </div>
+                <div class="lang-card reveal-up">
+                    <div class="lang-card-title"><i class="fas fa-language"></i> Languages</div>
+                    <div class="lang-item">
+                        <div class="lang-flag">&#127470;&#127475;</div>
+                        <div class="lang-info">
+                            <span class="lang-name">Hindi</span>
+                            <span class="lang-level native">Native</span>
+                        </div>
+                        <div class="lang-dots">
+                            <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-flag">&#127468;&#127463;</div>
+                        <div class="lang-info">
+                            <span class="lang-name">English</span>
+                            <span class="lang-level professional">Professional</span>
+                        </div>
+                        <div class="lang-dots">
+                            <span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span><span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="lang-item">
+                        <div class="lang-flag">&#127465;&#127466;</div>
+                        <div class="lang-info">
+                            <span class="lang-name">German</span>
+                            <span class="lang-level beginner">A1 Beginner</span>
+                        </div>
+                        <div class="lang-dots">
+                            <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content-col reveal-up">
+                <h2 class="sec-title">The Person<br><em>Behind the Code</em></h2>
+                <p class="about-para">I'm <strong>Prabhat Kumar</strong> &mdash; a B.Tech IT graduate from Anna University, Chennai (CGPA: 7.78), currently working as a <strong>Technical Intern in AI/ML</strong> at the <strong>Ministry of Electronics &amp; Information Technology (MeitY), Government of India</strong>, New Delhi.</p>
+                <p class="about-para">I specialize in building production-grade <strong>Retrieval-Augmented Generation (RAG) systems</strong>, intelligent chatbots powered by Large Language Models, and NLP pipelines that directly impact millions of Indian citizens.</p>
+                <p class="about-para">Actively seeking <strong>full-time AI/ML engineering roles</strong> and open to <strong>freelance AI projects</strong> &mdash; chatbots, NLP pipelines, and data solutions.</p>
+                <div class="about-facts">
+                    <div class="fact-item">
+                        <div class="fact-icon"><i class="fas fa-landmark"></i></div>
+                        <div><div class="fact-label">Current Role</div><div class="fact-value">Technical Intern &middot; AI/ML &middot; MeitY / NeGD</div></div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div><div class="fact-label">Education</div><div class="fact-value">B.Tech IT &middot; Anna University &middot; 7.78 CGPA</div></div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><div class="fact-label">Location</div><div class="fact-value">Chennai, Tamilnadu, India &#127470;&#127475;</div></div>
+                    </div>
+                    <div class="fact-item">
+                        <div class="fact-icon"><i class="fas fa-handshake"></i></div>
+                        <div><div class="fact-label">Availability</div><div class="fact-value">Full-time &amp; Freelance &mdash; Open Now</div></div>
+                    </div>
+                </div>
+                <div class="about-ctas">
+                    <a href="Prabhat_Kumar_Resume_AI.pdf" download class="btn-gold"><i class="fas fa-download"></i> Download Resume</a>
+                    <a href="https://www.linkedin.com/in/prabhatkumarindia" target="_blank" class="btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="sec-dark">
+    <div class="container">
+        <div class="sec-label reveal-up">Experience</div>
+        <h2 class="sec-title text-center reveal-up">Where I've <em>Worked</em></h2>
+        <div class="exp-card reveal-up">
+            <div class="exp-gov-strip">
+                <div class="gov-logos">
+                    <img src="meity_logo_bw.png" alt="MeitY" class="gov-meity-real">
+                </div>
+                <div class="gov-info">
+                    <div class="gov-ministry">Ministry of Electronics &amp; Information Technology</div>
+                    <div class="gov-dept">National e-Governance Division (NeGD) &mdash; Government of India</div>
+                    <div class="gov-location"><i class="fas fa-map-marker-alt"></i> New Delhi, India</div>
+                </div>
+                <div class="gov-badge"><div class="gov-badge-dot"></div> Active</div>
+            </div>
+            <div class="exp-body">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-role">Technical Intern &mdash; AI/ML Domain</h3>
+                        <div class="exp-date"><i class="fas fa-calendar-alt"></i> January 28, 2026 &mdash; Present</div>
+                    </div>
+                    <div class="exp-type-badge">Full-time Internship</div>
+                </div>
+                <div class="exp-points">
+                    <div class="exp-point">
+                        <div class="ep-icon"><i class="fas fa-robot"></i></div>
+                        <div class="ep-text">Developed a <strong>RAG-based AI chatbot</strong> using Python, LangChain, and ChromaDB for intelligent government scheme discovery and citizen query resolution.</div>
+                    </div>
+                    <div class="exp-point">
+                        <div class="ep-icon"><i class="fas fa-file-code"></i></div>
+                        <div class="ep-text">Implemented <strong>document parsing, recursive text chunking, and embedding generation</strong> to enhance semantic search accuracy across large government document repositories.</div>
+                    </div>
+                    <div class="exp-point">
+                        <div class="ep-icon"><i class="fas fa-bullseye"></i></div>
+                        <div class="ep-text">Optimized <strong>cosine similarity scoring</strong> within vector databases, improving response relevance and significantly reducing hallucination in LLM outputs.</div>
+                    </div>
+                    <div class="exp-point">
+                        <div class="ep-icon"><i class="fas fa-plug"></i></div>
+                        <div class="ep-text">Integrated <strong>REST APIs via FastAPI</strong> for real-time query processing and backend response generation across web, WhatsApp, and mobile platforms.</div>
+                    </div>
+                </div>
+                <div class="exp-tech">
+                    <span class="etag">Python</span><span class="etag">LangChain</span><span class="etag">ChromaDB</span>
+                    <span class="etag">RAG</span><span class="etag">FastAPI</span><span class="etag">LLMs</span>
+                    <span class="etag">Vector Databases</span><span class="etag">Embeddings</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="sec-label reveal-up">Expertise</div>
+        <h2 class="sec-title text-center reveal-up">Technical <em>Skills</em></h2>
+        <div class="skills-layout">
+            <div class="skill-col reveal-up">
+                <div class="skill-group">
+                    <div class="sg-header"><div class="sg-icon gold"><i class="fas fa-brain"></i></div><h3>AI &amp; Generative AI</h3></div>
+                    <div class="sg-bars">
+                        <div class="sbar-item"><div class="sbar-meta"><span>RAG / Retrieval Systems</span><span class="sbar-pct">90%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="90"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Large Language Models</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Natural Language Processing</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Prompt Engineering</span><span class="sbar-pct">82%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="82"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Embeddings &amp; Vector DBs</span><span class="sbar-pct">80%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-col reveal-up">
+                <div class="skill-group">
+                    <div class="sg-header"><div class="sg-icon blue"><i class="fas fa-code"></i></div><h3>Programming &amp; Frameworks</h3></div>
+                    <div class="sg-bars">
+                        <div class="sbar-item"><div class="sbar-meta"><span>Python</span><span class="sbar-pct">92%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="92"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>LangChain</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>FastAPI</span><span class="sbar-pct">80%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Scikit-learn</span><span class="sbar-pct">82%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="82"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>SQL</span><span class="sbar-pct">83%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="83"></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-col reveal-up">
+                <div class="skill-group">
+                    <div class="sg-header"><div class="sg-icon green"><i class="fas fa-tools"></i></div><h3>Tools &amp; Cloud</h3></div>
+                    <div class="sg-bars">
+                        <div class="sbar-item"><div class="sbar-meta"><span>ChromaDB</span><span class="sbar-pct">85%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>AWS S3</span><span class="sbar-pct">72%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="72"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Git &amp; VS Code</span><span class="sbar-pct">87%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="87"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>Tesseract OCR</span><span class="sbar-pct">75%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="75"></div></div></div>
+                        <div class="sbar-item"><div class="sbar-meta"><span>IBM Cognos / Power BI</span><span class="sbar-pct">78%</span></div><div class="sbar-track"><div class="sbar-fill" data-w="78"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-pills reveal-up">
+            <div class="tp"><i class="fab fa-python"></i> Python</div>
+            <div class="tp"><i class="fas fa-search"></i> RAG</div>
+            <div class="tp"><i class="fas fa-brain"></i> LLMs</div>
+            <div class="tp"><i class="fas fa-link"></i> LangChain</div>
+            <div class="tp"><i class="fas fa-database"></i> ChromaDB</div>
+            <div class="tp"><i class="fas fa-bolt"></i> FastAPI</div>
+            <div class="tp"><i class="fab fa-aws"></i> AWS S3</div>
+            <div class="tp"><i class="fas fa-language"></i> NLP</div>
+            <div class="tp"><i class="fas fa-vector-square"></i> Embeddings</div>
+            <div class="tp"><i class="fas fa-eye"></i> OCR</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="sec-dark">
+    <div class="container">
+        <div class="sec-label reveal-up">Portfolio</div>
+        <h2 class="sec-title text-center reveal-up">Featured <em>Projects</em></h2>
+        <div class="proj-filters reveal-up">
+            <button class="pf active" data-f="all">All Projects</button>
+            <button class="pf" data-f="genai">GenAI / RAG</button>
+            <button class="pf" data-f="nlp">NLP</button>
+            <button class="pf" data-f="analytics">Analytics</button>
+        </div>
+        <div class="proj-grid">
+            <div class="proj-card p-featured reveal-up" data-cat="genai nlp">
+                <div class="pc-ribbon">&#127963; Government of India Project</div>
+                <div class="pc-img">
+                    <img src="ChatBot.png" alt="PMJAY AI Chatbot">
+                    <div class="pc-overlay">
+                        <a href="https://github.com/prabhatKumar65/PMJAY-Chatbot-POC.git" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="pc-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="pc-body">
+    <div class="pc-meta">
+        <span class="pc-year">2026 &mdash; Present</span>
+        <span class="pc-org">MeitY &middot; NeGD &middot; Govt. of India</span>
+    </div>
+
+    <h3 class="pc-title">PMJAY Multi-Platform AI Chatbot</h3>
+
+    <p class="pc-desc">
+        <strong>Production-grade multiplatform AI chatbot</strong> (Web, WhatsApp, and Mobile) built using 
+        <strong>Retrieval-Augmented Generation (RAG)</strong> architecture to provide 
+        <strong>accurate and context-aware responses</strong> for Pradhan Mantri Jan Arogya Yojana (PMJAY) healthcare policy queries. 
+        
+        Implemented <strong>FastAPI-based scalable backend</strong>, 
+        <strong>vector database semantic search using embeddings</strong>, and 
+        <strong>multilingual NLP support</strong> to enable real-time conversational access for citizens. 
+        
+        Integrated <strong>document ingestion, recursive chunking, and similarity-based retrieval pipelines</strong> 
+        to ensure <strong>high response accuracy</strong>, <strong>low hallucination</strong>, and reliable policy information delivery. 
+        
+        Designed for <strong>real-world deployment</strong> with 
+        <strong>modular architecture</strong>, <strong>API integration</strong>, and 
+        <strong>production-ready performance</strong>.
+    </p>
+
+    <div class="pc-tags">
+        <span>RAG</span>
+        <span>FastAPI</span>
+        <span>LLMs</span>
+        <span>NLP</span>
+        <span>Python</span>
+        <span>Multilingual</span>
+    </div>
+</div>
+            </div>
+<div class="proj-card reveal-up" data-cat="nlp">
+                <div class="pc-img">
+                    <img src="Developer.png" alt="Document Digitization">
+                    <div class="pc-overlay">
+                        <a href="https://github.com/prabhatKumar65" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="pc-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-meta"><span class="pc-year">Feb &mdash; May 2025</span></div>
+                    <h3 class="pc-title">AI Document Digitization &amp; Preservation</h3>
+                    <p class="pc-desc">OCR + NLP pipeline for digitizing historical handwritten records. Fine-tuned Tesseract OCR for Devanagari script recognition with AWS S3 archival system.</p>
+                    <div class="pc-tags"><span>OCR</span><span>NLP</span><span>Tesseract</span><span>Devanagari</span><span>AWS S3</span></div>
+                </div>
+            </div>
+
+            <div class="proj-card reveal-up" data-cat="analytics">
+                <div class="pc-img">
+                    <img src="Ecommerce.png" alt="Covid Analytics">
+                    <div class="pc-overlay">
+                        <a href="https://github.com/prabhatKumar65" target="_blank" class="pc-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="pc-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="pc-body">
+                    <div class="pc-meta"><span class="pc-year">Aug &mdash; Oct 2023</span></div>
+                    <h3 class="pc-title">Covid Vaccine Analytics &mdash; IBM Cognos</h3>
+                    <p class="pc-desc">Interactive dashboards and heatmaps for national vaccination trend analysis. Predictive analytics for healthcare demand forecasting with state-wise and global comparative views.</p>
+                    <div class="pc-tags"><span>IBM Cognos</span><span>SQL</span><span>Predictive Analytics</span><span>Dashboards</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FREELANCE -->
+<section id="freelance">
+    <div class="container">
+        <div class="freelance-banner reveal-up">
+            <div class="fb-left">
+                <div class="fb-tag"><i class="fas fa-handshake"></i> Open for Freelance</div>
+                <h2>Let's Build Something <em>Intelligent</em></h2>
+                <p>Need a custom AI chatbot, RAG pipeline, NLP solution, or data analytics dashboard? I deliver production-ready AI systems tailored to your business needs.</p>
+                <a href="mailto:prabhat8065@gmail.com" class="btn-gold"><i class="fas fa-paper-plane"></i> Start a Project</a>
+            </div>
+            <div class="fb-right">
+                <div class="fb-service"><div class="fbs-icon"><i class="fas fa-robot"></i></div><span>AI Chatbots</span></div>
+                <div class="fb-service"><div class="fbs-icon"><i class="fas fa-search"></i></div><span>RAG Systems</span></div>
+                <div class="fb-service"><div class="fbs-icon"><i class="fas fa-language"></i></div><span>NLP Solutions</span></div>
+                <div class="fb-service"><div class="fbs-icon"><i class="fas fa-chart-line"></i></div><span>Data Dashboards</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec-dark">
+    <div class="container">
+        <div class="sec-label reveal-up">Contact</div>
+        <h2 class="sec-title text-center reveal-up">Get In <em>Touch</em></h2>
+        <p class="sec-sub text-center reveal-up">Open to full-time AI/ML roles and freelance projects. Let's talk!</p>
+        <div class="contact-layout">
+            <div class="contact-info reveal-up">
+                <div class="ci-item">
+                    <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                    <div><div class="ci-label">Email</div><a href="mailto:prabhat8065@gmail.com" class="ci-value">prabhat8065@gmail.com</a></div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                    <div><div class="ci-label">Phone</div><a href="tel:+917281948065" class="ci-value">+91 7281948065</a></div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><div class="ci-label">Location</div><span class="ci-value">New Delhi, India &#127470;&#127475;</span></div>
+                </div>
+                <div class="ci-item">
+                    <div class="ci-icon"><i class="fas fa-briefcase"></i></div>
+                    <div><div class="ci-label">Status</div><span class="ci-value ci-green">&#9679; Open to Opportunities</span></div>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/prabhatkumarindia" target="_blank" class="soc-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/prabhatKumar65" target="_blank" class="soc-btn github"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/hunter404_Pr" target="_blank" class="soc-btn twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/credulous_boy/" target="_blank" class="soc-btn instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form reveal-up" action="https://formspree.io/f/your_id" method="POST">
+                <div class="cf-row">
+                    <div class="cf-group"><label>Your Name</label><input type="text" name="name" placeholder="Enter Your Full Name" required></div>
+                    <div class="cf-group"><label>Your Email</label><input type="email" name="email" placeholder="Enter Your Email ID" required></div>
+                </div>
+                <div class="cf-group">
+                    <label>How would you like to work together?</label>
+                    <select name="type">
+                        <option value="fulltime">Full-time Job Opportunity</option>
+                        <option value="freelance">Freelance AI Project</option>
+                        <option value="collab">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="cf-group"><label>Message</label><textarea name="message" rows="5" placeholder="Write your message here...." required></textarea></div>
+                <button type="submit" class="btn-gold btn-full"><span>Send Message</span> <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-left">
+            <div class="footer-logo">PK</div>
+            <p>Prabhat Kumar &mdash; AI/ML Engineer &amp; GenAI Developer<br>
+            <span class="footer-location"><i class="fas fa-map-marker-alt"></i> New Delhi, India</span></p>
+        </div>
+        <div class="footer-center">
+            <div class="footer-gov">
+                <img src="emblem_india.png" alt="Government of India" class="footer-emblem-real">
+                <span>Technical Intern &middot; MeitY &middot; Govt. of India</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Prabhat Kumar. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
